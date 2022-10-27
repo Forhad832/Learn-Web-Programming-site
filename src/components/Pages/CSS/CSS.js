@@ -11,12 +11,7 @@ const CSS = () => {
   
     const[index,setIndex] = useState(0)
     const {id,title,desc,titleTwo} = css[index]
-  
-   const [categories,setCategories] = useState(newCategories)
-    const filteredCategories = (category)=>{
-        const filteredCategory = cssdata.filter((item)=> item.category === category)
-        return setCss(filteredCategory)
-    }
+    
     const handleICreament =()=>{
         setIndex((old)=> old + 1)
        
@@ -79,7 +74,7 @@ const CSS = () => {
             </div>
             <div className="hidden md:block md:col-span-3 categiry">
               <div className="w-5/6 mx-auto">
-              <CssCategories toggle={index} categories={categories} filteredCategories={setIndex}/>
+              <CssCategories toggle={index} categories={newCategories} filteredCategories={setIndex}/>
               </div>
               
             </div>

@@ -14,12 +14,12 @@ const Footer = () => {
           <div className='flex gap-10'>
                 <div className='flex flex-col gap-5'>
                 <NavLink to='/home'  className='text-lg font-semibold uppercase'>হোম</NavLink>
-                <NavLink to='/'  className='text-lg font-semibold uppercase'>এইচটিএমএল</NavLink>
-                <NavLink to='/'  className='text-lg font-semibold uppercase'>সিএসএস</NavLink>
+                <NavLink to='/html'  className='text-lg font-semibold uppercase'>এইচটিএমএল</NavLink>
+                <NavLink to='/css'  className='text-lg font-semibold uppercase'>সিএসএস</NavLink>
                 </div>
                 <div className='flex flex-col gap-5'>
-                <NavLink to='/'  className='text-lg font-semibold uppercase'>জাভাস্ক্রিপ্ট</NavLink>
-                <NavLink to='/'  className='text-lg font-semibold uppercase'>প্রজেক্টস</NavLink>
+                <NavLink to='/javascript'  className='text-lg font-semibold uppercase'>জাভাস্ক্রিপ্ট</NavLink>
+                <NavLink to='/projects'  className='text-lg font-semibold uppercase'>প্রজেক্টস</NavLink>
                </div>
           </div>
           <div>
@@ -44,7 +44,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-     <a href="#" className='absolute right-0 bottom-16'> <div className='p-3 bg-[#2450b6] rounded w-fit'>
+     <a  className='absolute right-0 bottom-16'> <div className='p-3 bg-[#2450b6] rounded w-fit'>
         <FaArrowCircleUp size={30}/>
       </div></a>
      </div>

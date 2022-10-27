@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CssCategories = ({categories,filteredCategories,toggle}) => {
- console.log(toggle)
+
 
 
   return (

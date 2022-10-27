@@ -8,12 +8,9 @@ const Javascript = () => {
     const [JavascriptData,setJavascriptData] = useState(jsdata);
     const [index,setIndex] = useState(0);
     const {id,title,desc,titleTwo} = JavascriptData[index];
-    const [categories,setCategpries] = useState(newCategories);
+    
 
-    const filteredCategories = (category)=>{
-        const filter = jsdata.filter((item) => item.category === category)
-        setJavascriptData(filter);
-    }
+    
    
   return (
     <div className='container px-4 mx-auto md:px-0'>
@@ -70,7 +67,7 @@ const Javascript = () => {
        </div>
        <div className="hidden md:block md:col-span-3">
            <div className="w-5/6 mx-auto">
-           <JsCategories toggle={index} categories={categories}  filteredCategories={setIndex}/>
+           <JsCategories toggle={index} categories={newCategories}  filteredCategories={setIndex}/>
            </div>
        </div>
    </div>

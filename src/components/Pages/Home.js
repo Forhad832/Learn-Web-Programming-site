@@ -16,7 +16,7 @@ const Home = () => {
     console.log(newValue)
     if(newValue === `html`){
      return 
-<HTML />
+		<HTML />
 
    }
 
@@ -28,7 +28,7 @@ const handleSubmit = (e)=>{
 }
 
   return (
-   <>
+ <>
 <section className='bg-[#333] '>
 	<div className="container px-4 mx-auto md:px-0">
 		<div className="flex flex-col items-center justify-center h-screen text-center text-gray-50">
@@ -36,8 +36,8 @@ const handleSubmit = (e)=>{
 			<h2 className='mb-10 text-3xl'>ফরহাদের সাথে</h2>
 			<div className='flex'>
 				<form onSubmit={handleSubmit} className='flex'>
-				<input value={search} onChange={(e)=>setSearch(e.target.value)} className='px-4 py-3 text-[#0a192f] outline-none  rounded-l-md w-80 placeholder:px-2' type="text"  placeholder='অনুসন্ধান করুন' />
-				<button type='submit'  className='px-4 py-3 bg-green-600 rounded-r-md'>
+				<input value={search} onChange={handleChange} className='px-4 py-3 text-[#0a192f] outline-none  rounded-l-md w-80 placeholder:px-2' type="text"  placeholder='অনুসন্ধান করুন' />
+				<button type='submit' onClick={handleSearch}  className='px-4 py-3 bg-green-600 rounded-r-md'>
 					<ImSearch size={25}/>
 				</button>
 				</form>
@@ -50,7 +50,7 @@ const handleSubmit = (e)=>{
 		{/* <HomeCard title='এইচটিএমএল' tiltetwo='html' text='ওয়েব পেজ তৈরির ভাষা' link='/html'/> */}
 
 		{home.map((item)=>{
-			const {id,title,tiltetwo,text,link} = item
+			const {id,title,text,link} = item
 			return(
 				<section className={`${id === 1 && 'bg-[#B4CDE6]'} ${id===2 && 'bg-[#06283D]'}
 				${id===3 && 'bg-[#F0DB4F]'}`}>

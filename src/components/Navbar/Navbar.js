@@ -10,14 +10,14 @@ const Navbar = () => {
       <div className="container px-4 mx-auto md:px-0">
         <nav className='flex items-center justify-between'>
             <div className="logo">
-               <a href="#"> <img src={Logo} alt="logo" className='object-contain w-16' /></a>
+               <NavLink to='/'> <img src={Logo} alt="logo" className='object-contain w-16' /></NavLink>
             </div>
             <div className="hidden gap-5 md:flex">
                 <NavLink to='/home'  className='text-lg font-semibold uppercase'>হোম</NavLink>
                 <NavLink to='/html'  className='text-lg font-semibold uppercase'>এইচটিএমএল</NavLink>
                 <NavLink to='/css'  className='text-lg font-semibold uppercase'>সিএসএস</NavLink>
                 <NavLink to='/javascript'  className='text-lg font-semibold uppercase'>জাভাস্ক্রিপ্ট</NavLink>
-                <NavLink to='/'  className='text-lg font-semibold uppercase'>প্রজেক্টস</NavLink>
+                <NavLink to='/projects'  className='text-lg font-semibold uppercase'>প্রজেক্টস</NavLink>
                
             </div>
             <div className='cursor-pointer md:hidden' onClick={()=>{setNavbar(!navbar)}}>

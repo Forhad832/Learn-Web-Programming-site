@@ -8,11 +8,8 @@ const HTML = () => {
     const [htmlData,setHtmlData] = useState(htmldata);
     const[index,setIndex] = useState(0)
     const {id,title,desc,titleTwo} = htmlData[index]
-   const [categories,setCategories] = useState(newCategories)
-    const filteredCategories = (category)=>{
-        const filteredCategory = htmldata.filter((item)=> item.category === category)
-        return setHtmlData(filteredCategory)
-    };
+  
+   
 
     const handleICreament =()=>{
         setIndex((old)=> old + 1)
@@ -74,7 +71,7 @@ const HTML = () => {
             </div>
             <div className="hidden md:block md:col-span-3 categiry">
                 <div className="w-5/6 mx-auto">
-                <HtmlCategories toggle={index} categories={categories}  filteredCategories={setIndex}/>
+                <HtmlCategories toggle={index} categories={newCategories}  filteredCategories={setIndex}/>
                 </div>
             </div>
         </div>
