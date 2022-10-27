@@ -7,10 +7,10 @@ const CSS = () => {
     const newCategories = cssdata.filter((item)=> item.category);
   
     
-    const [css,setCss] = useState(cssdata);
+   
   
     const[index,setIndex] = useState(0)
-    const {id,title,desc,titleTwo} = css[index]
+    const {id,title,desc,titleTwo} = cssdata[index]
     
     const handleICreament =()=>{
         setIndex((old)=> old + 1)

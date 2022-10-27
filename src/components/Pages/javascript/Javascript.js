@@ -5,9 +5,9 @@ import JsCategories from './JsCategories';
 import { jsdata } from './jsdata';
 const Javascript = () => {
     const newCategories = jsdata.map((item)=> item.category)
-    const [JavascriptData,setJavascriptData] = useState(jsdata);
+   
     const [index,setIndex] = useState(0);
-    const {id,title,desc,titleTwo} = JavascriptData[index];
+    const {id,title,desc,titleTwo} = jsdata[index];
     
 
     

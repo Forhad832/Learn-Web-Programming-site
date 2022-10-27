@@ -13,10 +13,9 @@ const Home = () => {
   }
   const handleSearch = (searchValue)=>{
     let newValue = searchValue.toLowerCase();
-    console.log(newValue)
+  
     if(newValue === `html`){
-     return 
-		<HTML />
+     return <HTML />
 
    }
 

@@ -5,9 +5,9 @@ import HtmlCategories from './HtmlCategories';
 import { htmldata } from './htmldata';
 const HTML = () => {
     const newCategories = htmldata.filter((item)=> item.category);
-    const [htmlData,setHtmlData] = useState(htmldata);
+    
     const[index,setIndex] = useState(0)
-    const {id,title,desc,titleTwo} = htmlData[index]
+    const {id,title,desc,titleTwo} = htmldata[index]
   
    
 
