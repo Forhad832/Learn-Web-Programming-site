@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <header className='bg-[#222] text-gray-100 py-4'>
       <div className="container px-4 mx-auto md:px-0">
-        <nav className='flex items-center justify-between'>
+        <nav id='nav' className='flex items-center justify-between'>
             <div className="logo">
                <NavLink to='/'> <img src={Logo} alt="logo" className='object-contain w-16' /></NavLink>
             </div>

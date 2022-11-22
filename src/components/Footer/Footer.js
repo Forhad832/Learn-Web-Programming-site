@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
       </div>
      <p className='absolute right-0 bottom-16'> <div className='p-3 bg-[#2450b6] rounded w-fit'>
-        <FaArrowCircleUp size={30}/>
+        <a href="#nav"><FaArrowCircleUp size={30}/></a>
       </div></p>
      </div>
     </div>

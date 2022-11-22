@@ -36,7 +36,7 @@ const CSS = () => {
                     const {head,text,input} = itemTwo;
                     return (
                         <div>
-                            <h3 className='mb-5 text-2xl font-semibold text-green-400'>{head}</h3>
+                            <h3 className='mb-5 text-2xl font-semibold text-[#0a192f]'>{head}</h3>
                             {text.map((para)=>{
                                 return (
                                     <p className='mb-10 text-lg'>{para}</p>
