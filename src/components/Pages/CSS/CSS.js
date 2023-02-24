@@ -19,7 +19,7 @@ const CSS = () => {
   return (
     <div className='container px-4 mx-auto md:px-0'>
          <Top  title='সিএসএস'/>
-        <div className="grid grid-cols-12 gap-10 py-20">
+        <div className="grid grid-cols-12 sm:gap-10 py-20">
           
             <div className='col-span-12 md:col-span-9 '>
             

@@ -20,7 +20,7 @@ const HTML = () => {
     <div className='container px-4 mx-auto md:px-0'>
          <Top  title='এইচটিএমএল'/>
         
-        <div className="grid grid-cols-12 gap-10 py-20">
+        <div className="grid grid-cols-12 sm:gap-10 py-20">
           
             <div className='col-span-12 px-3 shadow-lg md:col-span-9'>
            <div className="flex flex-col-reverse justify-between min-h-full md:flex-col">
